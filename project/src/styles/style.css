@@ -54,7 +54,7 @@
 .application {
     display: flex;
     list-style: none;
-    
+
     a {
         color: #2b2b2b;
         text-decoration: none;
@@ -84,7 +84,8 @@
 .social-links {
     display: flex;
     justify-content: end;
-    padding: 20px;
+    margin-bottom: 78px;
+    margin-right: 250px;
     gap: 10px;
 
     img {
