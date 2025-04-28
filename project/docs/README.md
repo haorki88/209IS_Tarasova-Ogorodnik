@@ -231,4 +231,4 @@ UDP (User Datagram Protocol) – быстрая передача без гара
 # слайдеры (до тега body)
 own carousel
 good strep carousel
-sleek slaider
+slick slaider
