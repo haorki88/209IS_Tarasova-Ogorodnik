@@ -227,3 +227,8 @@ UDP (User Datagram Protocol) – быстрая передача без гара
 1.	для webAPI (HTTPS и JSON)
 2.	стриминга, чатов, соцсетей (websocet + message par)
 3.	для тестирования API (postman и свагер)
+
+# слайдеры (до тега body)
+own carousel
+good strep carousel
+sleek slaider
