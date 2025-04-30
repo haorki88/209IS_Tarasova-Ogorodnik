@@ -30,8 +30,8 @@
     border-radius: 10px;
 
     img {
-        width: 60px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -44,7 +44,7 @@
         a {
             color: #000;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 }
@@ -79,18 +79,82 @@
     }
 }
 
-.social-links {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 78px;
-    margin-right: 250px;
-    gap: 10px;
-
-    img {
-        width: 60px;
-        height: 60px;
-    }
+.social-container {
+    padding: 20px;
+    position: relative;
+    display: inline-block;
 }
+
+.social-toggle {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.main-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.main-icon:hover{
+    transform: scale(1.1);
+}
+
+.main-icon::before {
+    content: "+";
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.social-toggle:checked + .main-icon::before {
+    content: "х";
+    font-size: 24px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.social-toggle:checked ~ .social-icons {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.main-icon:hover {
+    transform: scale(1.2);}
 
 .catalog {
     display: flex;
@@ -99,7 +163,7 @@
     height: 100vh;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.3)),
-        url(../../assets/images/pexels-cottonbro-6318293\ 1.png);
+        url(../../assets/images/background-catalog.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
