@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    gap: 100px;
 
     background-image: url(../../assets/images/background.jpg);
     background-repeat: no-repeat;
@@ -104,7 +105,7 @@
     transition: transform 0.3s;
 }
 
-.main-icon:hover{
+.main-icon:hover {
     transform: scale(1.1);
 }
 
@@ -154,15 +155,18 @@
 }
 
 .main-icon:hover {
-    transform: scale(1.2);}
+    transform: scale(1.2);
+}
 
 .catalog {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.3)),
+    padding: 20px 40px;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.74),
+            rgba(255, 255, 255, 0.3)
+        ),
         url(../../assets/images/background-catalog.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,21 +174,18 @@
     background-blend-mode: lighten;
 }
 
-.catalog-text {
+.title {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     h1 {
-        margin-left: 86px;
-        margin-top: 100px;
         font-size: 100px;
         color: #22754d;
     }
     p {
         font-size: 20px;
         color: #22754d;
-        margin-top: 100px;
     }
 }
 
@@ -197,5 +198,47 @@
             width: 100%;
             object-fit: cover;
         }
+
+        img:hover {
+            transform: translateY(-150px);
+            transition: 0.3 ease;
+        }
     }
+}
+
+.about {
+    padding: 20px 40px;
+
+    background-image: 
+    linear-gradient(
+            rgba(255, 255, 255, 0.74),
+            rgba(255, 255, 255, 0.3)
+        ),
+    url('../../assets/images/backgraund-about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+        width: 1000px;
+        object-fit: cover;
+    }
+}
+
+.gallery {
+    padding: 20px 40px;
+
+    background-image: url(../../assets/images/background-gallery.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+        width: 2000px;
+        text-align: center;
+    }
+}
+
+.contacts {
+    padding: 20px 40px;
 }
