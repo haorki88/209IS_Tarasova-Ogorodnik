@@ -218,6 +218,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     img {
         width: 850px;
         display: inline-block;
@@ -231,7 +232,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
+
+.wrapper  {
+    align-items: center;
+}
+
+
+
 
 .contacts {
     padding: 20px 40px;
