@@ -235,8 +235,8 @@
    
 }
 
-.wrapper  {
-    align-items: center;
+.wrapper {
+    text-align: center;
 }
 
 
@@ -244,4 +244,8 @@
 
 .contacts {
     padding: 20px 40px;
+}
+
+.hehe {
+    
 }
